@@ -22,7 +22,7 @@ app.add_middleware(
 # MongoDB
 # =========================================
 
-MONGO_URI = "mongodb://USUARIO:CONTRASEÑA@157.253.236.88:8087"
+MONGO_URI = "mongodb://ISIS2304D28202610:PuREVnASRp7k@157.253.236.88:8087/?authSource=admin"
 
 client = MongoClient(MONGO_URI)
 
