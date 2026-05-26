@@ -274,3 +274,155 @@ def destacar_resena(resena_id: str):
     return {
         "mensaje": "Reseña destacada"
     }
+
+# =========================================
+# RFC1
+# Top hoteles por calificación
+# =========================================
+
+@app.get("/rfc/top-hoteles")
+def top_hoteles():
+
+    pipeline = [
+        {
+            "$match": {
+                "estado": "publicada"
+            }
+        },
+        {
+            "$group": {
+                "_id": "$idHotel",
+                "nombreHotel": {"$first": "$hotel.nombre"},
+                "ciudad": {"$first": "$hotel.ciudad"},
+                "promedioCalificacion": {"$avg": "$calificacion"},
+                "totalResenas": {"$sum": 1}
+            }
+        },
+        {
+            "$sort": {
+                "promedioCalificacion": -1,
+                "totalResenas": -1
+            }
+        },
+        {
+            "$limit": 10
+        }
+    ]
+
+    data = list(resenas.aggregate(pipeline))
+
+    for d in data:
+        d["_id"] = str(d["_id"])
+
+    return data
+
+
+# =========================================
+# RFC2
+# Evolución reputación hotel
+# =========================================
+
+@app.get("/rfc/hoteles/{hotel_id}/evolucion")
+def evolucion_hotel(hotel_id: int):
+
+    pipeline = [
+        {
+            "$match": {
+                "idHotel": hotel_id,
+                "estado": "publicada"
+            }
+        },
+        {
+            "$group": {
+                "_id": {
+                    "anio": {"$year": "$fechaCreacion"},
+                    "mes": {"$month": "$fechaCreacion"}
+                },
+                "promedioMensual": {"$avg": "$calificacion"},
+                "totalResenas": {"$sum": 1}
+            }
+        },
+        {
+            "$sort": {
+                "_id.anio": 1,
+                "_id.mes": 1
+            }
+        }
+    ]
+
+    data = list(resenas.aggregate(pipeline))
+
+    return data
+
+
+# =========================================
+# RFC3
+# Comparación hoteles por ciudad
+# =========================================
+
+@app.get("/rfc/ciudades/{ciudad}/comparativo")
+def comparativo_ciudad(ciudad: str):
+
+    pipeline = [
+        {
+            "$match": {
+                "estado": "publicada",
+                "hotel.ciudad": ciudad
+            }
+        },
+        {
+            "$group": {
+                "_id": "$idHotel",
+                "nombreHotel": {"$first": "$hotel.nombre"},
+                "ciudad": {"$first": "$hotel.ciudad"},
+                "promedioCalificacion": {"$avg": "$calificacion"},
+                "totalResenas": {"$sum": 1},
+                "totalConRespuesta": {
+                    "$sum": {
+                        "$cond": [
+                            {"$ne": ["$respuestaAdministrador", None]},
+                            1,
+                            0
+                        ]
+                    }
+                },
+                "totalDestacadas": {
+                    "$sum": {
+                        "$cond": [
+                            {"$eq": ["$destacada", True]},
+                            1,
+                            0
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "$addFields": {
+                "porcentajeConRespuesta": {
+                    "$multiply": [
+                        {"$divide": ["$totalConRespuesta", "$totalResenas"]},
+                        100
+                    ]
+                },
+                "porcentajeDestacadas": {
+                    "$multiply": [
+                        {"$divide": ["$totalDestacadas", "$totalResenas"]},
+                        100
+                    ]
+                }
+            }
+        },
+        {
+            "$sort": {
+                "promedioCalificacion": -1
+            }
+        }
+    ]
+
+    data = list(resenas.aggregate(pipeline))
+
+    for d in data:
+        d["_id"] = str(d["_id"])
+
+    return data
