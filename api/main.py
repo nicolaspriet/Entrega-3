@@ -36,6 +36,23 @@ resenas = db["resenas"]
 
 def serialize_doc(doc):
     doc["_id"] = str(doc["_id"])
+
+    for key, value in doc.items():
+        if isinstance(value, datetime):
+            doc[key] = value.isoformat()
+
+    if doc.get("votosUtilidad"):
+        for voto in doc["votosUtilidad"]:
+            if "fecha" in voto and isinstance(voto["fecha"], datetime):
+                voto["fecha"] = voto["fecha"].isoformat()
+
+    if doc.get("respuestaAdministrador"):
+        respuesta = doc["respuestaAdministrador"]
+        if "fechaRespuesta" in respuesta and isinstance(respuesta["fechaRespuesta"], datetime):
+            respuesta["fechaRespuesta"] = respuesta["fechaRespuesta"].isoformat()
+        if "fechaActualizacion" in respuesta and isinstance(respuesta["fechaActualizacion"], datetime):
+            respuesta["fechaActualizacion"] = respuesta["fechaActualizacion"].isoformat()
+
     return doc
 
 # =========================================
