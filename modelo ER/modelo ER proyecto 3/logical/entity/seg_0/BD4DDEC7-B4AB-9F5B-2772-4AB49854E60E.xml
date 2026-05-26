@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BD4DDEC7-B4AB-9F5B-2772-4AB49854E60E" name="CLIENTE">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-02-28 19:13:15 UTC</createdTime>
+<ownerDesignName>modelo ER proyecto 3</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="idCliente" id="F59123C6-63AC-BE08-854C-DE0A2B11CA0E">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-02-28 19:13:25 UTC</createdTime>
+<ownerDesignName>modelo ER proyecto 3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="documento" id="EBF69007-A1B1-B3EB-ED83-45DD6C5A6699">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-02-28 19:13:40 UTC</createdTime>
+<ownerDesignName>modelo ER proyecto 3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="E8D43504-513C-77C6-4036-E6FAE8E59161">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-02-28 19:13:50 UTC</createdTime>
+<ownerDesignName>modelo ER proyecto 3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="apellidos" id="E685641E-B273-F491-EF10-A9DE7EA5241A">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-02-28 19:13:59 UTC</createdTime>
+<ownerDesignName>modelo ER proyecto 3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="correo" id="0AC26F5B-B81C-F09F-8015-9B51B4C3E5B0">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-02-28 19:37:19 UTC</createdTime>
+<ownerDesignName>modelo ER proyecto 3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefono" id="E18B9649-9013-4818-E06E-913BC2339BF3">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-02-28 19:37:40 UTC</createdTime>
+<ownerDesignName>modelo ER proyecto 3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="909909CF-D44D-6DAD-D8B8-3D1803C3759B" name="CLIENTE PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-02-28 19:13:34 UTC</createdTime>
+<ownerDesignName>modelo ER proyecto 3</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F59123C6-63AC-BE08-854C-DE0A2B11CA0E</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="0B58F7AB-0F3B-1E87-F723-836FEA8E9DF4" name="documento">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-02-28 21:19:01 UTC</createdTime>
+<ownerDesignName>modelo ER proyecto 3</ownerDesignName>
+<newElementsIDs>EBF69007-A1B1-B3EB-ED83-45DD6C5A6699</newElementsIDs>
+<usedAttributes>
+<attributeRef>EBF69007-A1B1-B3EB-ED83-45DD6C5A6699</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="254B2330-9973-6F47-DB17-04ABDB205B90" name="correo">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-02-28 21:19:40 UTC</createdTime>
+<ownerDesignName>modelo ER proyecto 3</ownerDesignName>
+<newElementsIDs>0AC26F5B-B81C-F09F-8015-9B51B4C3E5B0</newElementsIDs>
+<usedAttributes>
+<attributeRef>0AC26F5B-B81C-F09F-8015-9B51B4C3E5B0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

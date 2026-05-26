@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6444B302-631B-D569-629A-D462A7DE078E" name="RESPUESTAS ADMINISTRADOR">
+<createdBy>josed</createdBy>
+<createdTime>2026-05-26 19:01:23 UTC</createdTime>
+<ownerDesignName>modelo ER proyecto 3</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="idAdmin" id="F259A893-B59E-23FD-7480-1DF27E40AC36">
+<createdBy>josed</createdBy>
+<createdTime>2026-05-26 19:01:39 UTC</createdTime>
+<ownerDesignName>modelo ER proyecto 3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="texto" id="0584336E-DB9E-C91E-3C5C-962DB7D0E15C">
+<createdBy>josed</createdBy>
+<createdTime>2026-05-26 19:01:57 UTC</createdTime>
+<ownerDesignName>modelo ER proyecto 3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_respuesta" id="7D2CEC85-E0F2-FC7D-9FAA-6839A997807A">
+<createdBy>josed</createdBy>
+<createdTime>2026-05-26 19:02:16 UTC</createdTime>
+<ownerDesignName>modelo ER proyecto 3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_actualizacion" id="831B4B00-6CCD-A51E-24CD-377AF16577E2">
+<createdBy>josed</createdBy>
+<createdTime>2026-05-26 19:02:30 UTC</createdTime>
+<ownerDesignName>modelo ER proyecto 3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idAdmin1" id="255D6B20-EE02-4F10-E90C-55DEEE57B4B0">
+<createdBy>josed</createdBy>
+<createdTime>2026-05-26 19:03:17 UTC</createdTime>
+<generatorID>290FB95E-FF43-2C76-0FC8-03F439DAD005</generatorID>
+<ownerDesignName>modelo ER proyecto 3</ownerDesignName>
+<referedAttribute>55C0B106-BFAD-7323-16A9-FACAA31226C5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

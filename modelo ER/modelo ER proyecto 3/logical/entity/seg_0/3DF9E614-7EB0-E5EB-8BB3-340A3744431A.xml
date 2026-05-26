@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3DF9E614-7EB0-E5EB-8BB3-340A3744431A" name="RESERVA">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-02-28 19:38:08 UTC</createdTime>
+<ownerDesignName>modelo ER proyecto 3</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="idReserva" id="ED213FED-7D6D-C9CF-C661-38E5F202A69A">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-02-28 19:40:10 UTC</createdTime>
+<ownerDesignName>modelo ER proyecto 3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fechaEntrada" id="E0198994-101A-0F69-DEB7-7BA33CF21A8F">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-02-28 19:40:23 UTC</createdTime>
+<ownerDesignName>modelo ER proyecto 3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fechaSalida" id="B4294463-6C15-571C-18E6-68D4AD53368D">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-02-28 19:40:44 UTC</createdTime>
+<ownerDesignName>modelo ER proyecto 3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="adultos" id="3C99462B-DB5C-CB47-6943-58CBB10C43F0">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-02-28 19:40:57 UTC</createdTime>
+<ownerDesignName>modelo ER proyecto 3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="menores3" id="B5AB6B0E-E0BC-AA5E-F1F7-D54FA5344C28">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-02-28 19:41:47 UTC</createdTime>
+<ownerDesignName>modelo ER proyecto 3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="precioTotal" id="57DE7CDE-0176-05D9-669E-8C52BB4ED913">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-02-28 19:41:57 UTC</createdTime>
+<ownerDesignName>modelo ER proyecto 3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigoConfirmacion" id="437D6202-0A38-CBF7-A8FB-133AA523E7F9">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-02-28 19:42:05 UTC</createdTime>
+<ownerDesignName>modelo ER proyecto 3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="estado" id="574463DB-1391-D694-EABC-59072C2FDCC7">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-02-28 19:42:21 UTC</createdTime>
+<ownerDesignName>modelo ER proyecto 3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idHotel" id="72440845-AD07-38A8-5BEE-32CD528A6948">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-02-28 20:32:43 UTC</createdTime>
+<generatorID>D07E825C-5812-95C6-BE28-1B1D08E6DB0E</generatorID>
+<ownerDesignName>modelo ER proyecto 3</ownerDesignName>
+<referedAttribute>39FEB1F2-7B79-EB9E-F88C-A810234E8264</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idCliente" id="3863CBAD-CB4E-F2E0-CE3E-4AD9460CF883">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-02-28 20:34:11 UTC</createdTime>
+<generatorID>0DBF7E8C-4C66-049A-E428-4E45084DE0D2</generatorID>
+<ownerDesignName>modelo ER proyecto 3</ownerDesignName>
+<referedAttribute>F59123C6-63AC-BE08-854C-DE0A2B11CA0E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idHabitacion" id="2176AF25-4EB3-E65E-8928-50E4209878BE">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-04-26 00:53:10 UTC</createdTime>
+<generatorID>336F6E32-2309-36EE-0A09-936A5F3E3C89</generatorID>
+<ownerDesignName>modelo ER proyecto 3</ownerDesignName>
+<referedAttribute>0CA8757E-3A40-BDE8-B98F-B907FF1E3BF0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BCB9A261-9B25-84EF-8795-9553AC031148" name="RESERVA PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-02-28 19:40:18 UTC</createdTime>
+<ownerDesignName>modelo ER proyecto 3</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>ED213FED-7D6D-C9CF-C661-38E5F202A69A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

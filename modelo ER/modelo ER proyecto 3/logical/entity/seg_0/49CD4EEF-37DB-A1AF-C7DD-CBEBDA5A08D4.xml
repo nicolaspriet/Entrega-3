@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="49CD4EEF-37DB-A1AF-C7DD-CBEBDA5A08D4" name="ADMINISTRADOR">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-04-25 18:49:24 UTC</createdTime>
+<ownerDesignName>modelo ER proyecto 3</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="idAdmin" id="55C0B106-BFAD-7323-16A9-FACAA31226C5">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-04-25 18:49:34 UTC</createdTime>
+<ownerDesignName>modelo ER proyecto 3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="documento" id="915872CA-9AF6-202E-0BD2-C95586549C36">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-04-25 18:50:17 UTC</createdTime>
+<ownerDesignName>modelo ER proyecto 3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="206EA7FE-4AAA-C76A-76BC-8F93CC269E3D">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-04-25 19:36:43 UTC</createdTime>
+<ownerDesignName>modelo ER proyecto 3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="apellido" id="89881708-4A73-8D2B-25D7-DF7C1A46C7D4">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-04-25 19:37:00 UTC</createdTime>
+<ownerDesignName>modelo ER proyecto 3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="correo" id="E3A249BF-B1E3-F2DD-BA00-CC01CD463C05">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-04-25 19:37:23 UTC</createdTime>
+<ownerDesignName>modelo ER proyecto 3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefono" id="92AC33E6-B7A1-68B5-13CF-0B671AE8B1F0">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-04-25 19:47:33 UTC</createdTime>
+<ownerDesignName>modelo ER proyecto 3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CD9D5A37-E33E-FF23-7FD7-73BF10EC1341" name="ADMINISTRADOR PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-04-25 18:52:03 UTC</createdTime>
+<ownerDesignName>modelo ER proyecto 3</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>55C0B106-BFAD-7323-16A9-FACAA31226C5</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="7B325D18-9A77-5619-2160-5E7B4322AEFE" name="UQ_documento">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-04-25 19:12:34 UTC</createdTime>
+<ownerDesignName>modelo ER proyecto 3</ownerDesignName>
+<newElementsIDs>915872CA-9AF6-202E-0BD2-C95586549C36</newElementsIDs>
+<usedAttributes>
+<attributeRef>915872CA-9AF6-202E-0BD2-C95586549C36</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="C368A144-0982-F1F6-538D-3CEF72170423" name="UQ_correo">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-04-25 19:47:15 UTC</createdTime>
+<ownerDesignName>modelo ER proyecto 3</ownerDesignName>
+<newElementsIDs>E3A249BF-B1E3-F2DD-BA00-CC01CD463C05</newElementsIDs>
+<usedAttributes>
+<attributeRef>E3A249BF-B1E3-F2DD-BA00-CC01CD463C05</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

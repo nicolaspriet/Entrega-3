@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="062866E1-E6A9-B84B-5963-8F75D785A1D2" name="SERVICIO">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-02-28 18:24:19 UTC</createdTime>
+<ownerDesignName>modelo ER proyecto 3</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="idServicio" id="4FCD2216-2649-B583-4833-C820E0BA5DF0">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-02-28 18:24:29 UTC</createdTime>
+<ownerDesignName>modelo ER proyecto 3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="5095F57D-0B75-A617-1CDC-60208D3F6143">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-02-28 18:24:46 UTC</createdTime>
+<ownerDesignName>modelo ER proyecto 3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descripcion" id="22D7230E-91EC-8D11-7C8B-E919E3D5BC47">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-02-28 18:25:05 UTC</createdTime>
+<ownerDesignName>modelo ER proyecto 3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipoCosto" id="A3E16B86-FBB7-098F-96D6-206AFB7EC441">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-02-28 18:25:29 UTC</createdTime>
+<ownerDesignName>modelo ER proyecto 3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="aplicaPor" id="6EB3732A-C1A7-735E-1499-1EE93C9CDAB7">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-02-28 19:08:04 UTC</createdTime>
+<ownerDesignName>modelo ER proyecto 3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="precio" id="9D4FA766-7E4C-12DE-1CDD-8D3608BB82AF">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-02-28 19:08:29 UTC</createdTime>
+<ownerDesignName>modelo ER proyecto 3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DDFD0901-51FD-6270-859F-4C86CE5F7887" name="SERVICIO PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-02-28 19:04:06 UTC</createdTime>
+<ownerDesignName>modelo ER proyecto 3</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4FCD2216-2649-B583-4833-C820E0BA5DF0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
