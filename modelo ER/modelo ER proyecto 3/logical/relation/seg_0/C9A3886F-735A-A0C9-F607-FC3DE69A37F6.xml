@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_13" directorySegmentName="seg_0" id="C9A3886F-735A-A0C9-F607-FC3DE69A37F6">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-04-25 19:50:46 UTC</createdTime>
+<ownerDesignName>modelo ER proyecto 3</ownerDesignName>
+<sourcePk>CD9D5A37-E33E-FF23-7FD7-73BF10EC1341</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>49CD4EEF-37DB-A1AF-C7DD-CBEBDA5A08D4</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A77AE168-159F-A537-A2DC-326B1D49AD18</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
